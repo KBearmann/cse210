@@ -123,5 +123,18 @@ What would you like to do? ";
 
 
 }
+    
+
+internal class JournalEntry
+{
+    internal object _dateTime;
+    internal string _entryNumber;
+    internal string _journalEntry;
+    internal object _JournalEntry;
+    internal string _journalPrompt;
+
+    internal void Display()
+    {
+        throw new NotImplementedException();
     }
 }
