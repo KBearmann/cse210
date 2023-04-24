@@ -6,7 +6,7 @@ public class Journal
     // variables
     public List<JournalEntry> _journal = new List<JournalEntry>();
     // private string fileName = "MyJournal.txt";
-    private string _userFileName;
+    public string _userFileName;
 
 
     // method
