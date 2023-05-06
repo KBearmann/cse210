@@ -29,6 +29,7 @@ class Scripture
         do
         {
 
+            
             ShowScripture(reference);                                                             // Print Scripture
             Console.WriteLine("Press enter to continue or type 'quit' to finish:");      // Ask user for input   
             _answer = Console.ReadLine();                                                // Receive the answer
@@ -38,9 +39,11 @@ class Scripture
         } while (_answer != "quit");                                                     
     }
 
-    private void HideWords()                                                             //Hide Words method
+   
+   
+   private void HideWords()                                                             
     {
-        _words.Clear();                                                                  //Clear the list for each pass
+        _words.Clear();                                                                  
         words = _content.Split(" ");                                                    
         foreach (string word in words){_words.Add(word);}                               
         _counter = 0;                                                                    
@@ -53,7 +56,7 @@ class Scripture
             }
             else
             {
-                _word = new Word(_words[_index]);                                       //if the index do not have "_" will add the string to Word type variable
+                _word = new Word(_words[_index]);                                       
                 _words[_index] = _word.GetWord();                                       
                 _counter++;                                                             
                 _changes++;                                                             
@@ -62,9 +65,12 @@ class Scripture
         _content = String.Join(" ", _words);                                            
     }
 
+    
     private void ShowScripture(Reference reference)                                                        
     { 
-        Console.Clear();                                                              
+       
+       
+       Console.Clear();                                                              
         Console.Write(reference.GetReference());                                                                
         Console.WriteLine(" " + _content);                                                   
     }
