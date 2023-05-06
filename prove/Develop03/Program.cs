@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        ScriptureManagement _list = new ScriptureManagement();
+        Reference reference = new Reference(_list.GetSelecterReference());
+        Scripture scripture = new Scripture(reference, _list.GetSelecterScripture());
+
     }
+
 }
